@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
 
 # Define the copyright string without the Unicode escape sequence
-COPYRIGHT_STRING = "@never_delete this source maker"
+COPYRIGHT_STRING = "OWNER BY:-- @Ros3_Zii"
 
 # Define the desired order of keys in the output
 DESIRED_ORDER = [
