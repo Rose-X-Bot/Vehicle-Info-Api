@@ -8,7 +8,13 @@ API_URL = "https://gtplay.in/API/vehicle_challan_info/testapi.php"
 @app.route("/vehicle=<vehicle_no>", methods=["GET", "POST"])
 def vehicle_info(vehicle_no):
     if not vehicle_no:
-        return jsonify({"status": False, "error": "vehicle_no is required"}), 400
+        return jsonify({
+            "DEVELOPER BY 😎": "@Ros3_Zii",
+            "ALL API BUY FOR DM": "@Ros3_Zii", 
+            "JAI MAHAKAL 🥰": "@h4ck3rspybot",
+            "status": False, 
+            "error": "vehicle_no is required"
+        }), 400
 
     try:
         headers = {
@@ -19,12 +25,28 @@ def vehicle_info(vehicle_no):
 
         # Disable SSL verification (for certificate mismatch)
         response = requests.post(API_URL, headers=headers, data=data, verify=False)
-
-        # Return response from remote API
-        return jsonify(response.json())
+        
+        # Original response ko get karo
+        api_response = response.json()
+        
+        # Naya response structure banayein
+        final_response = {
+            "DEVELOPER BY 😎": "@Ros3_Zii",
+            "ALL API BUY FOR DM": "@Ros3_Zii",
+            "JAI MAHAKAL 🥰": "@h4ck3rspybot",
+            "data": api_response
+        }
+        
+        return jsonify(final_response)
 
     except Exception as e:
-        return jsonify({"status": False, "error": str(e)})
+        return jsonify({
+            "DEVELOPER BY 😎": "@Ros3_Zii",
+            "ALL API BUY FOR DM": "@Ros3_Zii",
+            "JAI MAHAKAL 🥰": "@h4ck3rspybot",
+            "status": False, 
+            "error": str(e)
+        })
 
 if __name__ == "__main__":
     import urllib3
