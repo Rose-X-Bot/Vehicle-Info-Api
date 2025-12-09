@@ -10,7 +10,7 @@ def vehicle_info(vehicle_no):
     if not vehicle_no:
         return jsonify({
             "DEVELOPER BY 😎": "@Ros3_Zii",
-            "ALL API BUY FOR DM": "@Ros3_Zii", 
+            "MAHADEV": "@Ros3_Zii", 
             "JAI MAHAKAL 🥰": "@h4ck3rspybot",
             "status": False, 
             "error": "vehicle_no is required"
@@ -32,7 +32,7 @@ def vehicle_info(vehicle_no):
         # Naya response structure banayein
         final_response = {
             "DEVELOPER BY 😎": "@Ros3_Zii",
-            "ALL API BUY FOR DM": "@Ros3_Zii",
+            "MAHADEV": "@Ros3_Zii",
             "JAI MAHAKAL 🥰": "@h4ck3rspybot",
             "data": api_response
         }
@@ -42,7 +42,7 @@ def vehicle_info(vehicle_no):
     except Exception as e:
         return jsonify({
             "DEVELOPER BY 😎": "@Ros3_Zii",
-            "ALL API BUY FOR DM": "@Ros3_Zii",
+            "MAHADEV": "@Ros3_Zii",
             "JAI MAHAKAL 🥰": "@h4ck3rspybot",
             "status": False, 
             "error": str(e)
