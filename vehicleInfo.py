@@ -3,7 +3,7 @@ import requests
 
 app = Flask(__name__)
 
-API_URL = "https://gtplay.in/API/vehicle_challan_info/puc_info.php"
+API_URL = "https://gtplay.in/API/vehicle_challan_info/testapi.php"
 
 @app.route("/vehicle=<vehicle_no>", methods=["GET", "POST"])
 def vehicle_info(vehicle_no):
